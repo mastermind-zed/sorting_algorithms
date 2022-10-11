@@ -3,7 +3,7 @@
 #include "sort.h"
 
 /**
- * swap_nodes - Entry Point
+ * swap_nodes - function that swaps two nodes in a listint_t doubly-linked list
  * @h: A pointer to the head of the doubly-linked list.
  * @node1: A pointer to the first node to swap.
  * @node2: The second node to swap.
@@ -24,7 +24,8 @@ void swap_nodes(listint_t **h, listint_t **node1, listint_t *node2)
 }
 
 /**
- * insertion_sort_list - Entry Point 
+ * insertion_sort_list - function that sorts a doubly linked list of integers
+ *                     in ascending order  using the insertion sort algorithm.
  * @list: A pointer to the head of a doubly-linked list
  *
  */
