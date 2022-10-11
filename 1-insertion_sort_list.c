@@ -24,8 +24,7 @@ void swap_nodes(listint_t **h, listint_t **node1, listint_t *node2)
 }
 
 /**
- * insertion_sort_list - Entry Point
- * 
+ * insertion_sort_list - Entry Point 
  * @list: A pointer to the head of a doubly-linked list
  *
  */
