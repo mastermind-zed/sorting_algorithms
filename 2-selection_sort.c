@@ -3,8 +3,7 @@
 #include "sort.h"
 
 /**
- * selection_sort - Entry Point
- * 
+ * selection_sort - function that sorts an array of integers in ascending order
  * @array: array of integers
  * @size: size of integers
  *
@@ -12,22 +11,22 @@
 void selection_sort(int *array, size_t size)
 {
 	int sort;
-	size_t a, b, min;
+	size_t x, y, min;
 
-	for (a = 0; a < size - 1; a++)
+	for (x = 0; x < size - 1; x++)
 	{
-		min = a;
-		for (b = a + 1; b < size; b++)
+		min = x;
+		for (y = x + 1; y < size; y++)
 		{
-			if (array[b] < array[min])
+			if (array[y] < array[min])
 			{
-				min = b;
+				min = y;
 			}
 		}
-		if (min != a)
+		if (min != x)
 		{
-			sort = array[a];
-			array[a] = array[min];
+			sort = array[x];
+			array[x] = array[min];
 			array[min] = sort;
 			print_array((const int *)array, size);
 		}
